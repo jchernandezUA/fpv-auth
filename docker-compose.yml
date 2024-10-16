@@ -27,6 +27,8 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 1234
       POSTGRES_DB: fpv
+    ports:
+      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data  # Monta un volumen para la persistencia de datos
 
